@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+	<style >
+
+		body{
+			box-shadow: 1px 6px 17px green ;
+			margin-left: 25% ;
+			margin-right: 35% ;
+			margin-top: 20px ;
+			padding-top: 10px ;
+			padding-bottom: 15px ;
+			
+		    font-family: 'Times New Roman','Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+			text-align: center;
+
+			
+		}
+        .btw{
+        	width: 150px ;
+        	margin-left: 50% ;
+			margin-right: 35% ;
+			margin-top: 20px ;
+			padding-top: 10px ;
+			padding-bottom: 15px ;
+            color: green ;
+        }
+
+	.color{
+	color: red ;
+
+	}
+	.couleur{
+	color: blue;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<h1 align="center" class="color"><b>Login : </b></h1>
+	<form method="POST" action="user.php" class="couleur" >
+	<table align="center">
+		<tr>
+			<td for="nom" id="nom" align="right" > Pseudo : </td> 
+			<td>
+			<input type="text" name="nom" placeholder="Pseudo " required> <br>
+			</td>			
+        </tr>
+        <tr>
+	        <td for="Mot" id="Mot" align="right">Mot de passe : </td>
+	        <td> <input type="password" name="password" placeholder="Mot de passe" required><br> </td>			
+        </tr>
+		
+       
+		
+        <tr>
+        	<td align="center" >
+        	<input align="center" class="btw" type="submit" name="login" value="Login" align="center">	
+        	</td>        
+        </tr>
+		 
+			
+		
+	</table>
+</form>
+
+<h1 align="center" class="color" ><b>Inscrivez-Vous : </b></h1>
+<form method="POST" action="login.php" class="couleur">
+	<table align="center">
+		<tr>
+			<td for="nom" id="nom" align="right" > Pseudo : </td> 
+			<td>
+			<input type="text" name="nom" placeholder="Pseudo" required> <br>
+			</td>			
+        </tr>
+        <tr>
+	        <td for="Mot" id="Mot" align="right">Mot de passe : </td>
+	        <td> <input type="password" name="password" placeholder="Mot de passe" required><br> </td>			
+        </tr>
+		
+        <tr>
+	        <td for="Email" id="Email" align="right" >Adresse Email :</td> 
+	        <td>
+	        <input type="Email" name="email" placeholder="Adresse Email" required><br>
+	        </td>			
+        </tr>
+		
+        <tr>
+        	<td>
+        	<input align="center" class="btw" type="submit" name="inscription" value="Inscrivez-vous" align="center">	
+        	</td>        
+        </tr>
+		 
+			
+		
+	</table>
+</form>
+</body>
+</html>
